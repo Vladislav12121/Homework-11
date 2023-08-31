@@ -13,6 +13,9 @@
 		65E3F03C2AA0EB9E001A765C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E3F03A2AA0EB9E001A765C /* Main.storyboard */; };
 		65E3F03E2AA0EB9F001A765C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E3F03D2AA0EB9F001A765C /* Assets.xcassets */; };
 		65E3F0412AA0EB9F001A765C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E3F03F2AA0EB9F001A765C /* LaunchScreen.storyboard */; };
+		65E3F04E2AA0EE79001A765C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3F04D2AA0EE79001A765C /* MainViewController.swift */; };
+		65E3F0502AA0EF5F001A765C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3F04F2AA0EF5F001A765C /* Person.swift */; };
+		65E3F0522AA0F330001A765C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E3F0512AA0F330001A765C /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		65E3F03D2AA0EB9F001A765C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E3F0402AA0EB9F001A765C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65E3F0422AA0EB9F001A765C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E3F04D2AA0EE79001A765C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		65E3F04F2AA0EF5F001A765C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		65E3F0512AA0F330001A765C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		65E3F0332AA0EB9E001A765C /* Homework 11 */ = {
 			isa = PBXGroup;
 			children = (
-				65E3F0342AA0EB9E001A765C /* AppDelegate.swift */,
-				65E3F0362AA0EB9E001A765C /* SceneDelegate.swift */,
-				65E3F0382AA0EB9E001A765C /* ViewController.swift */,
-				65E3F03A2AA0EB9E001A765C /* Main.storyboard */,
+				65E3F0482AA0EBAD001A765C /* App */,
+				65E3F0492AA0EBBD001A765C /* ViewControllers */,
+				65E3F04A2AA0EBD0001A765C /* Storyboards */,
 				65E3F03D2AA0EB9F001A765C /* Assets.xcassets */,
-				65E3F03F2AA0EB9F001A765C /* LaunchScreen.storyboard */,
-				65E3F0422AA0EB9F001A765C /* Info.plist */,
 			);
 			path = "Homework 11";
+			sourceTree = "<group>";
+		};
+		65E3F0482AA0EBAD001A765C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				65E3F0342AA0EB9E001A765C /* AppDelegate.swift */,
+				65E3F0362AA0EB9E001A765C /* SceneDelegate.swift */,
+				65E3F0422AA0EB9F001A765C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		65E3F0492AA0EBBD001A765C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65E3F0382AA0EB9E001A765C /* ViewController.swift */,
+				65E3F04D2AA0EE79001A765C /* MainViewController.swift */,
+				65E3F04F2AA0EF5F001A765C /* Person.swift */,
+				65E3F0512AA0F330001A765C /* DataStore.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65E3F04A2AA0EBD0001A765C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				65E3F03A2AA0EB9E001A765C /* Main.storyboard */,
+				65E3F03F2AA0EB9F001A765C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E3F0502AA0EF5F001A765C /* Person.swift in Sources */,
+				65E3F0522AA0F330001A765C /* DataStore.swift in Sources */,
+				65E3F04E2AA0EE79001A765C /* MainViewController.swift in Sources */,
 				65E3F0392AA0EB9E001A765C /* ViewController.swift in Sources */,
 				65E3F0352AA0EB9E001A765C /* AppDelegate.swift in Sources */,
 				65E3F0372AA0EB9E001A765C /* SceneDelegate.swift in Sources */,
@@ -288,7 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Homework 11/Info.plist";
+				INFOPLIST_FILE = "Homework 11/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -301,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.icodeschool.Homework-11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Homework 11/Info.plist";
+				INFOPLIST_FILE = "Homework 11/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,9 +367,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.icodeschool.Homework-11";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
