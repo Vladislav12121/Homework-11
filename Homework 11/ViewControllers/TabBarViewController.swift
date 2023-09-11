@@ -22,5 +22,4 @@ class TabBarViewController: UITabBarController {
         contactListVC.persons = persons
         sectionVC.persons = persons
     }
-    
 }
